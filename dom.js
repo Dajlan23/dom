@@ -3,7 +3,7 @@
 //console.log(document.title);
 //console.log(document.head);
 //console.log(document.all);
-
+/*
 document.title = "DOM vezba";
 
 let items = document.getElementById("items");
@@ -23,6 +23,27 @@ document.getElementById("lista").textContent = "Nesto";
 
 listItems[3].textContent = "neki item";
 
-//querySelector
+querySelector
 document.querySelector("#paragraf p").style.backgroundColor = "#B0DEBA";
+*/
 
+let listItem = document.getElementById("items")
+console.log(listItem.parentNode);
+listItem.parentNode.style.backgroundColor = "lightblue"
+//child
+//console.log(listItem.childNodes)
+//listItem.childNodes[1].style.backgroundColor = "brown"
+//children
+listItem.children[0].style.backgroundColor = "yellow"
+console.log(listItem.children)
+
+listItem.firstElementChild;
+listItem.lastElementChild;
+
+//sibling
+
+console.log(listItem.previousElementSibling);
+listItem.previousElementSibling.style.color = "brown"
+console.log(listItem.nextElementSibling)
+let drugiElement = document.getElementsByClassName("list-item")[1];
+drugiElement.previousElementSibling.style.backgroundColor = "green"
